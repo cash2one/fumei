@@ -1,0 +1,20 @@
+<div id="leftcontrol">
+  <ul id="nav">
+    <li>
+      <div id="closelc" class="fr btn hide">
+        <div class="lcbody">
+          <div class="lcitem top">
+            <div class="rect top"></div>
+          </div>
+          <div class="lcitem bottom">
+            <div class="rect bottom"></div>
+          </div>
+        </div>
+      </div>
+    </li>
+    <li class="navitem active"><a class="transform" href="index.php"><span class="circle transform"></span>首页</a></li>
+    {dede:channel type='top'}
+    <li class="navitem "><a href="list.php?tid=[field:id/]" class="hassub"><span class="circle transform"></span>[field:typename/]</a></li>
+    {/dede:channel}
+  </ul>
+</div>

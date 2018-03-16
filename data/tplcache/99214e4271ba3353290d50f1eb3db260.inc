@@ -1,0 +1,1 @@
+<dd><a href="[field:typelink/]" target="_blank">病例查看</a></dd>

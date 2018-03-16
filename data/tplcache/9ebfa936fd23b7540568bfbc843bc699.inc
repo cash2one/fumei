@@ -1,0 +1,1 @@
+<dd><a href="#" target="_blank">0[field:global.autoindex/]<span>/</span>[field:title/]</a></dd>

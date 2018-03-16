@@ -1,0 +1,23 @@
+<div id="header">
+  <div class="content"> <a href="/" id="logo"><img src="/style/images/logo.png" height="40" /></a>
+    <ul id="nav">
+      <li class="navitem"><a {dede:field name=typeid runphp="yes"}(@me=="")? @me=" class='active'":@me="";{/dede:field} href="/">首页</a></li>
+      {dede:channelartlist row=10 typeid='top'}
+      <li class="navitem"><a {dede:field name='currentstyle'/} href="{dede:field name='typeurl'/}" >{dede:field name='typename'/}</a>
+        <ul class="subnav">
+          {dede:channel type='son' noself='yes'}
+          <li><a href="[field:typelink/]">[field:typename/]</a></li>
+          {/dede:channel}
+        </ul>
+      </li>
+      {/dede:channelartlist}
+    </ul>
+    <div class="clear"></div>
+  </div>
+  <a id="headSHBtn" href="javascript:;"><i class="fa fa-bars"></i></a> </div>
+<div class="sidebar">
+  <ul>
+    <li><a target="_blank" href="http://wpa.qq.com/msgrd?v=3&uin=1904299797&site=qq&menu=yes"><img src="/style/images/img58.png"></a></li>
+    <li><a href="#sitecontent"><img src="/style/images/img60_002.png"></a></li>
+  </ul>
+</div>

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html class="effect">
+<head>
+<meta charset="utf-8" />
+<meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport" />
+<meta content="yes" name="apple-mobile-web-app-capable" />
+<meta content="black" name="apple-mobile-web-app-status-bar-style" />
+<meta content="telephone=no" name="format-detection" />
+<title>{dede:field.title/}_{dede:global.cfg_webname/}</title>
+<meta name="keywords" content="{dede:field name='keywords'/}" />
+<meta name="description" content="{dede:field name='description' function='html2text(@me)'/}" />
+<link type="text/css" href="css/font-awesome.min.css" rel="stylesheet" />
+<link type="text/css" href="css/mbxslider.min.css" rel="stylesheet" />
+<link rel="stylesheet" type="text/css" href="css/manimate.min.css" />
+<link type="text/css" href="css/mstyle.css" rel="stylesheet" />
+<link rel="stylesheet" type="text/css" href="css/m999.css" />
+</head>
+
+<body>
+<div id="sitecontent" class="transform">
+  {dede:include filename="head_m.htm"/}
+  <div class="scrollView">
+    <div class="npagePage">
+      <div class="content plr10">
+        <div id="servicelist">
+          <ul class="wrap">
+            {dede:list titlelen='60'}
+            <li class="serviceitem wow fadeIn"><a href="view.php?aid=[field:id/]"><img src="[field:litpic/]" width="320" height="120" /></a>
+              <div>
+                <p class="title ellipsis">[field:title/]</p>
+                <p class="description">[field:description function='cn_substr(@me,100)'/]...</p>
+              </div>
+            </li>
+            <li class="line"></li>
+            {/dede:list}
+          </ul>
+          <div class="clear"></div>
+        </div>
+      
+      </div>
+    </div>
+    {dede:include filename="foot_m.htm"/}
+    <div id="bgmask" class="iPage hide"></div>
+  </div>
+</div>
+{dede:include filename="nav_m.htm"/}
+<script type="text/javascript">var YYConfig={};</script> 
+<script type="text/javascript" src="js/mzepto.min.js"></script> 
+<script type="text/javascript" src="js/mzepto.bxslider.min.js"></script> 
+<script type="text/javascript" src="js/mwow.min.js"></script> 
+<script type="text/javascript" src="js/mmasonry_4.min.js"></script> 
+<script type="text/javascript">$(function(){new WOW({scrollContainer:".scrollView"}).init();})</script> 
+<script type="text/javascript" src="js/morg.min.js" data-main="ListMain"></script>
+</body>
+</html>

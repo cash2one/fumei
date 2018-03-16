@@ -1,0 +1,1 @@
+<dd><a href="[field:typelink/]" target="_blank">选择美国梅奥诊所</a></dd>
